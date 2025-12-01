@@ -75,12 +75,23 @@ $(document).ready(function() {
     
     /* Smooth scrolling */
 	$('a.scrollto').on('click', function(e){
-        //store hash
-        var target = this.hash;    
+        var target = this.hash;
         e.preventDefault();
-		$('body').scrollTo(target, 800, {offset: 0, 'axis':'y'});
-		
-	});
+        var section = $(target);
+        // Scroll to section
+        $('body').scrollTo(target, 800, {offset: 0, 'axis':'y'});
+        // Alterna visibilidade do conteúdo
+        var block = section.find('.section-block');
+        var anchor = section.find('.toggle-content');
+        var arrow = anchor.find('span');
+        block.slideToggle(200, function() {
+            if (block.is(':visible')) {
+                arrow.html('&#9650;');
+            } else {
+                arrow.html('&#9660;');
+            }
+        });
+    });
 	
     
     /* ======= jQuery Responsive equal heights plugin ======= */
