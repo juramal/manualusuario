@@ -117,6 +117,9 @@ Para contribuir com melhorias no manual:
 4. Push para a branch (`git push origin feature/nova-secao`)
 5. Abra um Pull Request
 
+ ## 👥 Ver o Manual Online
+ <a href="https://htmlpreview.github.io/?https://github.com/juramal/manualusuario/blob/main/index.html">Manual Oline</a>
+
 ## 📞 Suporte
 
 Para dúvidas ou sugestões sobre o manual, entre em contato através do repositório do projeto.
