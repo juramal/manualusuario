@@ -118,7 +118,7 @@ Para contribuir com melhorias no manual:
 5. Abra um Pull Request
 
 ## 👥 Ver o Manual Online
-<a href="https://htmlpreview.github.io/?https://github.com/juramal/manualusuario/blob/main/index.html">Manual Online</a>
+<a href="https://juramal.github.io/manualusuario">Manual Online</a>
 
 ## 📞 Suporte
 
