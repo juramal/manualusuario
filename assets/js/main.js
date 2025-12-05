@@ -108,5 +108,26 @@ $(document).ready(function() {
         $(this).ekkoLightbox();
     });    
 
+    // Função de impressão com backgrounds
+    $('.print-button').on('click', function(e) {
+        e.preventDefault();
+        
+        // Forçar impressão de backgrounds
+        var css = '@media print { * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; } }';
+        var style = document.createElement('style');
+        style.appendChild(document.createTextNode(css));
+        document.head.appendChild(style);
+        
+        // Mostrar todas as seções antes de imprimir
+        $('.section-block').show();
+        
+        // Imprimir
+        window.print();
+        
+        // Remover o estilo após impressão
+        setTimeout(function() {
+            document.head.removeChild(style);
+        }, 1000);
+    });
 
 });
