@@ -117,12 +117,15 @@ Para contribuir com melhorias no manual:
 4. Push para a branch (`git push origin feature/nova-secao`)
 5. Abra um Pull Request
 
+## 👥 Ver o Manual Online
+<a href="https://htmlpreview.github.io/?https://github.com/juramal/manualusuario/blob/main/index.html">Manual Online</a>
+
 ## 📞 Suporte
 
 Para dúvidas ou sugestões sobre o manual, entre em contato através do repositório do projeto.
 
 ---
 
-**Última atualização**: 27/11/2025
+**Última atualização**: 05/12/2025
 
 > Este manual foi desenvolvido para facilitar o uso do Sistema de Cadastro de Professores, proporcionando uma experiência de usuário mais intuitiva e eficiente.
