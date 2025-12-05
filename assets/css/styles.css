@@ -9,6 +9,76 @@
     font-size: 1.2em;
   }
 }
+
+/* Estilos para impressão */
+@media print {
+  /* Ocultar elementos desnecessários na impressão */
+  .doc-sidebar, #content-filter, .toggle-content span {
+    display: none !important;
+  }
+  
+  /* Ajustar layout para impressão */
+  .doc-content {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .content-inner {
+    width: 100% !important;
+  }
+  
+  /* Mostrar todo o conteúdo das seções */
+  .section-block {
+    display: block !important;
+  }
+  
+  /* Quebra de página entre seções principais */
+  .doc-section {
+    page-break-after: auto;
+    margin-bottom: 30px;
+  }
+  
+  /* Evitar quebra de página dentro de conteúdo */
+  .section-block div {
+    page-break-inside: avoid;
+  }
+  
+  /* Ajustar imagens para impressão */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+    page-break-inside: avoid;
+  }
+  
+  /* Ajustar cores para impressão */
+  .section-title {
+    color: #000 !important;
+  }
+  
+  /* Remover backgrounds desnecessários */
+  body {
+    background: white !important;
+  }
+  
+  /* Ajustar fonte para impressão */
+  body, p, li {
+    font-size: 12pt !important;
+    line-height: 1.4 !important;
+  }
+  
+  h1 {
+    font-size: 18pt !important;
+  }
+  
+  h2 {
+    font-size: 16pt !important;
+  }
+  
+  h4 {
+    font-size: 14pt !important;
+  }
+}
 .sidebar-hamburger {
   display: none !important;
 }

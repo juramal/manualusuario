@@ -58,276 +58,383 @@
                 </div><!--//doc-header-->
                 <div class="doc-body">
                     <div class="doc-content">
-                        <div style="padding:10px 0;">
-                            <input type="text" id="content-filter" placeholder="Digite sua dúvida..." style="width:100%;padding:8px 12px;border-radius:4px;border:1px solid #ccc;">
+                        <div style="padding:10px 0; display:flex; gap:10px; align-items:center;">
+                            <input type="text" id="content-filter" placeholder="Digite sua dúvida..." style="flex:1;padding:8px 12px;border-radius:4px;border:1px solid #ccc;">
+                            <button onclick="window.print()" style="padding:8px 16px; background:#28a745; color:white; border:none; border-radius:4px; cursor:pointer; font-weight:bold;">
+                                📄 Imprimir PDF
+                            </button>
                         </div>
                         <div class="content-inner">
                                                         <!-- SEÇÕES WEB --><!-- SEÇÕES WEB -->
                                                         
                                                         <!-- WEB CADASTRO -->
                                                         <section id="web-cadastro" class="doc-section"><h2 class="section-title section-title-red"><a href="#" class="toggle-content" style="text-decoration:none;color:inherit;">WEB: Cadastro <span style="font-size:0.8em;float:right;">&#9660;</span></a></h2><div class="section-block" style="display:none;">
-                                                            <!-- Adicione o texto/imagem aqui -->
-                                                              <div style="display:flex; align-items:center; gap:32px;">
-                                                                    <img src="assets/images/web_cadastro.jpg" alt="Login" style="max-width:40%; height:auto; display:block; margin:0;">
+                                                            <div style="padding:20px; background:#f8f9fa; border-left:4px solid #dc3545;">
+                                                                <h4 style="color:#dc3545; margin-bottom:15px;">Como Realizar o Cadastro no Sistema WEB</h4>
+                                                                <div style="display:flex; align-items:center; gap:32px; margin-bottom:15px;">
+                                                                    <img src="assets/images/web_cadastro.jpg" alt="WEB Cadastro" style="max-width:40%; height:auto; display:block; margin:0; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
                                                                     <div style="flex:1;">
-                                                                        <!-- Adicione o texto explicativo aqui -->
-                                                                         - Digitar o seu Nome, Email e Senha e clicar em "Cadastrar" para salvar no sistema.
+                                                                        <p><strong>Passos para o cadastro:</strong></p>
+                                                                        <ul>
+                                                                            <li>Digite seu <strong>Nome completo</strong></li>
+                                                                            <li>Digite um <strong>Email válido</strong></li>
+                                                                            <li>Crie uma <strong>Senha segura</strong> (mínimo 6 caracteres)</li>
+                                                                            <li>Clique no botão <strong>"Cadastrar"</strong></li>
+                                                                        </ul>
+                                                                        <p style="color:#28a745; font-weight:bold;">✓ Após o cadastro, você receberá uma confirmação por email.</p>
                                                                     </div>
                                                                 </div>
-                                                            
+                                                            </div>
                                                         </div></section>
                                                         
                                                          <!-- WEB LOGIN -->
                                                         <section id="web-login" class="doc-section">
                                                             <h2 class="section-title section-title-red"><a href="#" class="toggle-content" style="text-decoration:none;color:inherit;">WEB: Login <span style="font-size:0.8em;float:right;">&#9660;</span></a></h2>
                                                             <div class="section-block" style="display:none;">
-                                                                <!-- Adicione o texto explicativo aqui -->
-                                                                 <div style="display:flex; align-items:center; gap:32px;">
-                                                                    <img src="assets/images/web_login.jpg" alt="Login" style="max-width:40%; height:auto; display:block; margin:0;">
-                                                                    <div style="flex:1;">
-                                                                        <!-- Adicione o texto explicativo aqui -->
-                                                                         - Digitar o seu Email e Senha e clicar em "Login" para acessar o sistema.
+                                                                <div style="padding:20px; background:#f8f9fa; border-left:4px solid #dc3545;">
+                                                                    <h4 style="color:#dc3545; margin-bottom:15px;">Como Fazer Login no Sistema WEB</h4>
+                                                                    <div style="display:flex; align-items:center; gap:32px; margin-bottom:15px;">
+                                                                        <img src="assets/images/web_login.jpg" alt="WEB Login" style="max-width:40%; height:auto; display:block; margin:0; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+                                                                        <div style="flex:1;">
+                                                                            <p><strong>Passos para fazer login:</strong></p>
+                                                                            <ul>
+                                                                                <li>Digite seu <strong>Email</strong> cadastrado</li>
+                                                                                <li>Digite sua <strong>Senha</strong></li>
+                                                                                <li>Clique no botão <strong>"Login"</strong></li>
+                                                                            </ul>
+                                                                            <p style="color:#ffc107; font-weight:bold;">⚠ Certifique-se de que seus dados estão corretos.</p>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
-                                                               
                                                             </div>
                                                         </section>
 
                                                         <!-- WEB ESQUECEU SUA SENHA -->
                                                         <section id="web-esqueceu" class="doc-section"><h2 class="section-title section-title-red"><a href="#" class="toggle-content" style="text-decoration:none;color:inherit;">WEB: Esqueceu sua senha <span style="font-size:0.8em;float:right;">&#9660;</span></a></h2><div class="section-block" style="display:none;">
-                                                            <!-- Adicione o texto/imagem aqui -->
-                                                             <div style="display:flex; align-items:center; gap:32px;">
-                                                                    <img src="assets/images/web_esqueceusenha.jpg" alt="Login" style="max-width:40%; height:auto; display:block; margin:0;">
-                                                                    <div style="flex:1;">
-                                                                        <!-- Adicione o texto explicativo aqui -->
-                                                                         - Digitar o seu Email para que possa receber seu codigo para a recuperação de senha.
-                                                                    </div>
-                                                                    
-                                                                </div>
-                                                                <br>
+                                                            <div style="padding:20px; background:#f8f9fa; border-left:4px solid #dc3545;">
+                                                                <h4 style="color:#dc3545; margin-bottom:15px;">Como Recuperar sua Senha no Sistema WEB</h4>
                                                                 
+                                                                <div style="display:flex; align-items:center; gap:32px; margin-bottom:20px;">
+                                                                    <img src="assets/images/web_esqueceusenha.jpg" alt="Recuperar Senha - Passo 1" style="max-width:40%; height:auto; display:block; margin:0; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+                                                                    <div style="flex:1;">
+                                                                        <h5 style="color:#dc3545;">Passo 1: Solicitar Código</h5>
+                                                                        <ul>
+                                                                            <li>Digite seu <strong>Email</strong> cadastrado</li>
+                                                                            <li>Clique em <strong>"Enviar Código"</strong></li>
+                                                                            <li>Verifique sua caixa de email</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div style="display:flex; align-items:center; gap:32px; margin-bottom:20px;">
+                                                                    <img src="assets/images/web_esqueceusenha_codigo.jpg" alt="Recuperar Senha - Passo 2" style="max-width:40%; height:auto; display:block; margin:0; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+                                                                    <div style="flex:1;">
+                                                                        <h5 style="color:#dc3545;">Passo 2: Inserir Código</h5>
+                                                                        <ul>
+                                                                            <li>Digite o <strong>código recebido</strong> por email</li>
+                                                                            <li>Clique em <strong>"Verificar"</strong></li>
+                                                                        </ul>
+                                                                        <p style="color:#ffc107; font-size:0.9em;">⚠ O código expira em 15 minutos</p>
+                                                                    </div>
+                                                                </div>
 
                                                                 <div style="display:flex; align-items:center; gap:32px;">
-
-                                                                 <img src="assets/images/web_esqueceusenha_codigo.jpg" alt="Login" style="max-width:40%; height:auto; display:block; margin:0;">
+                                                                    <img src="assets/images/web_esqueceusenha_novasenha.jpg" alt="Recuperar Senha - Passo 3" style="max-width:40%; height:auto; display:block; margin:0; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
                                                                     <div style="flex:1;">
-                                                                        <!-- Adicione o texto explicativo aqui -->
-                                                                         - Digitar aqui o seu código recebido em seu email.
+                                                                        <h5 style="color:#dc3545;">Passo 3: Nova Senha</h5>
+                                                                        <ul>
+                                                                            <li>Digite sua <strong>nova senha</strong></li>
+                                                                            <li><strong>Confirme</strong> a nova senha</li>
+                                                                            <li>Clique em <strong>"Atualizar Senha"</strong></li>
+                                                                        </ul>
+                                                                        <p style="color:#28a745; font-weight:bold;">✓ Sua senha foi alterada com sucesso!</p>
                                                                     </div>
-
                                                                 </div>
-                                                                <br>
-                                                                
-
-                                                                <div style="display:flex; align-items:center; gap:32px;">
-
-                                                                 <img src="assets/images/web_esqueceusenha_novasenha.jpg" alt="Login" style="max-width:40%; height:auto; display:block; margin:0;">
-                                                                    <div style="flex:1;">
-                                                                        <!-- Adicione o texto explicativo aqui -->
-                                                                         - Digitar aqui a sua nova senha e confirmar a nova senha.
-                                                                    </div>
-
-                                                                </div>
-                                                            
-
-                                                                                                                        
+                                                            </div>
                                                         </div></section>
 
                                                         <!-- WEB INDICADORES -->
                                                         <section id="web-indicadores" class="doc-section"><h2 class="section-title section-title-red"><a href="#" class="toggle-content" style="text-decoration:none;color:inherit;">WEB: Indicadores <span style="font-size:0.8em;float:right;">&#9660;</span></a></h2><div class="section-block" style="display:none;">
-                                                            <!-- Adicione o texto/imagem aqui -->
-                                                             <div style="display:flex; align-items:center; gap:32px;">
-                                                                    <img src="assets/images/web_indicadores.jpg" alt="Login" style="max-width:40%; height:auto; display:block; margin:0;">
+                                                            <div style="padding:20px; background:#f8f9fa; border-left:4px solid #dc3545;">
+                                                                <h4 style="color:#dc3545; margin-bottom:15px;">Painel de Indicadores do Sistema WEB</h4>
+                                                                <div style="display:flex; align-items:center; gap:32px; margin-bottom:15px;">
+                                                                    <img src="assets/images/web_indicadores.jpg" alt="WEB Indicadores" style="max-width:40%; height:auto; display:block; margin:0; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
                                                                     <div style="flex:1;">
-                                                                        <!-- Adicione o texto explicativo aqui -->
-                                                                         - Neste painel são mostrados os indicadores do sistema.
+                                                                        <p><strong>O painel de indicadores apresenta:</strong></p>
+                                                                        <ul>
+                                                                            <li><strong>Estatísticas</strong> do sistema em tempo real</li>
+                                                                            <li><strong>Gráficos</strong> e métricas importantes</li>
+                                                                            <li><strong>Resumo</strong> das atividades principais</li>
+                                                                            <li><strong>Status</strong> geral do sistema</li>
+                                                                        </ul>
+                                                                        <p style="color:#17a2b8; font-weight:bold;">📊 Monitore o desempenho do sistema através deste painel.</p>
                                                                     </div>
                                                                 </div>
-                                                            
+                                                            </div>
                                                         </div></section>
                                                         
 
                                                         <!-- WEB PROFESSOR CADASTRO -->
                                                         <section id="web-prof-cadastro" class="doc-section"><h2 class="section-title section-title-red"><a href="#" class="toggle-content" style="text-decoration:none;color:inherit;">WEB: Professor Cadastro <span style="font-size:0.8em;float:right;">&#9660;</span></a></h2><div class="section-block" style="display:none;">
-                                                            <!-- Adicione o texto/imagem aqui -->
-                                                              <div style="display:flex; align-items:center; gap:32px;">
-                                                                    <img src="assets/images/web_prof_cadastro.jpg" alt="Login" style="max-width:40%; height:auto; display:block; margin:0;">
+                                                            <div style="padding:20px; background:#f8f9fa; border-left:4px solid #dc3545;">
+                                                                <h4 style="color:#dc3545; margin-bottom:15px;">Como Cadastrar Professores no Sistema WEB</h4>
+                                                                
+                                                                <div style="display:flex; align-items:center; gap:32px; margin-bottom:20px;">
+                                                                    <img src="assets/images/web_prof_cadastro.jpg" alt="WEB Professor Cadastro" style="max-width:40%; height:auto; display:block; margin:0; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
                                                                     <div style="flex:1;">
-                                                                        <!-- Adicione o texto explicativo aqui -->
-                                                                         - Você pode cadastrar um professor preenchendo os campos ou Importando uma planilha CSV.
-                                                                    </div>
-                                                                </div>
-                                                                <br>
-
-                                                                 <div style="display:flex; align-items:center; gap:32px;">
-                                                                    <img src="assets/images/web_prof_cadastro_planilha.jpg" alt="Login" style="max-width:40%; height:auto; display:block; margin:0;">
-                                                                    <div style="flex:1;">
-                                                                        <!-- Adicione o texto explicativo aqui -->
-                                                                         <b>Caso você opte por Importar o CSV</b> <br>
-                                                                         - É necessário baixar a planilha modelo, depois de preenchido basta clicar em Importar planilha.
+                                                                        <h5 style="color:#dc3545;">Cadastro Manual</h5>
+                                                                        <ul>
+                                                                            <li>Preencha todos os <strong>campos obrigatórios</strong></li>
+                                                                            <li>Adicione <strong>Nome, Email, Telefone</strong></li>
+                                                                            <li>Selecione <strong>Matéria e Curso</strong></li>
+                                                                            <li>Clique em <strong>"Cadastrar Professor"</strong></li>
+                                                                        </ul>
                                                                     </div>
                                                                 </div>
 
-                                                            
+                                                                <div style="display:flex; align-items:center; gap:32px;">
+                                                                    <img src="assets/images/web_prof_cadastro_planilha.jpg" alt="Importar CSV" style="max-width:40%; height:auto; display:block; margin:0; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+                                                                    <div style="flex:1;">
+                                                                        <h5 style="color:#dc3545;">Importação por CSV</h5>
+                                                                        <ul>
+                                                                            <li>Baixe a <strong>planilha modelo</strong></li>
+                                                                            <li>Preencha todos os dados dos professores</li>
+                                                                            <li>Salve o arquivo em formato <strong>CSV</strong></li>
+                                                                            <li>Clique em <strong>"Importar Planilha"</strong></li>
+                                                                        </ul>
+                                                                        <p style="color:#17a2b8; font-weight:bold;">💡 Importação em lote para múltiplos professores!</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div></section>
 
                                                         <!-- WEB PROFESSOR RELATÓRIO -->
                                                         <section id="web-prof-relatorio" class="doc-section"><h2 class="section-title section-title-red"><a href="#" class="toggle-content" style="text-decoration:none;color:inherit;">WEB: Professor Relatório <span style="font-size:0.8em;float:right;">&#9660;</span></a></h2><div class="section-block" style="display:none;">                                                            
-                                                            <!-- Adicione o texto/imagem aqui -->
-                                                             <div style="display:flex; align-items:center; gap:32px;">
-                                                                    <img src="assets/images/web_prof_relatorio.jpg" alt="Login" style="max-width:40%; height:auto; display:block; margin:0;">
+                                                            <div style="padding:20px; background:#f8f9fa; border-left:4px solid #dc3545;">
+                                                                <h4 style="color:#dc3545; margin-bottom:15px;">Gerenciar Relatórios de Professores</h4>
+                                                                
+                                                                <div style="display:flex; align-items:center; gap:32px; margin-bottom:20px;">
+                                                                    <img src="assets/images/web_prof_relatorio.jpg" alt="Lista de Professores" style="max-width:40%; height:auto; display:block; margin:0; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
                                                                     <div style="flex:1;">
-                                                                        <!-- Adicione o texto explicativo aqui -->
-                                                                         
-                                                                         - Neste relatório você tem acesso à todos os professores cadastrados.
+                                                                        <h5 style="color:#dc3545;">Visualizar Professores</h5>
+                                                                        <ul>
+                                                                            <li>Acesse a <strong>lista completa</strong> de professores</li>
+                                                                            <li>Visualize <strong>informações detalhadas</strong></li>
+                                                                            <li>Use <strong>filtros de pesquisa</strong></li>
+                                                                            <li>Ordenar por <strong>nome, matéria ou curso</strong></li>
+                                                                        </ul>
                                                                     </div>
-                                                                    </div>
-                                                                    <br>
+                                                                </div>
 
-                                                                     <div style="display:flex; align-items:center; gap:32px;">
-                                                                    <img src="assets/images/web_prof_relatorio_editar.jpg" alt="Login" style="max-width:40%; height:auto; display:block; margin:0;">
+                                                                <div style="display:flex; align-items:center; gap:32px; margin-bottom:20px;">
+                                                                    <img src="assets/images/web_prof_relatorio_editar.jpg" alt="Editar Professor" style="max-width:40%; height:auto; display:block; margin:0; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
                                                                     <div style="flex:1;">
-                                                                        <!-- Adicione o texto explicativo aqui -->
-                                                                         
-                                                                         - Você pode editar um professor, preenchendo os campos necessários e clicando em Atualizar.
+                                                                        <h5 style="color:#dc3545;">Editar Informações</h5>
+                                                                        <ul>
+                                                                            <li>Clique no <strong>ícone de edição</strong></li>
+                                                                            <li>Modifique os <strong>campos necessários</strong></li>
+                                                                            <li>Clique em <strong>"Atualizar"</strong></li>
+                                                                        </ul>
+                                                                        <p style="color:#ffc107; font-size:0.9em;">⚠️ Certifique-se de que os dados estão corretos</p>
                                                                     </div>
-                                                                    </div>
+                                                                </div>
 
-                                                                     <br>
-
-                                                                     <div style="display:flex; align-items:center; gap:32px;">
-                                                                    <img src="assets/images/web_prof_relatorio_exportar.jpg" alt="Login" style="max-width:40%; height:auto; display:block; margin:0;">
+                                                                <div style="display:flex; align-items:center; gap:32px;">
+                                                                    <img src="assets/images/web_prof_relatorio_exportar.jpg" alt="Exportar Relatório" style="max-width:40%; height:auto; display:block; margin:0; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
                                                                     <div style="flex:1;">
-                                                                        <!-- Adicione o texto explicativo aqui -->
-                                                                         
-                                                                         - Você pode exportar um relatório em PDF clicando no botão Exportar.
+                                                                        <h5 style="color:#dc3545;">Exportar Relatório</h5>
+                                                                        <ul>
+                                                                            <li>Clique no botão <strong>"Exportar"</strong></li>
+                                                                            <li>Escolha o formato <strong>PDF</strong></li>
+                                                                            <li>Faça o <strong>download</strong> do arquivo</li>
+                                                                        </ul>
+                                                                        <p style="color:#28a745; font-weight:bold;">📄 Relatório completo em PDF!</p>
                                                                     </div>
-                                                                    </div>
-
-
+                                                                </div>
+                                                            </div>
                                                         </div></section>
 
                                                         <!-- WEB CURSO CADASTRO -->
                                                         <section id="web-curso-cadastro" class="doc-section"><h2 class="section-title section-title-red"><a href="#" class="toggle-content" style="text-decoration:none;color:inherit;">WEB: Curso Cadastro <span style="font-size:0.8em;float:right;">&#9660;</span></a></h2><div class="section-block" style="display:none;">
-                                                            <!-- Adicione o texto/imagem aqui -->
-                                                              <div style="display:flex; align-items:center; gap:32px;">
-                                                                    <img src="assets/images/web_curso_cadastro.jpg" alt="Login" style="max-width:40%; height:auto; display:block; margin:0;">
+                                                            <div style="padding:20px; background:#f8f9fa; border-left:4px solid #dc3545;">
+                                                                <h4 style="color:#dc3545; margin-bottom:15px;">Como Cadastrar Cursos no Sistema WEB</h4>
+                                                                
+                                                                <div style="display:flex; align-items:center; gap:32px; margin-bottom:20px;">
+                                                                    <img src="assets/images/web_curso_cadastro.jpg" alt="WEB Curso Cadastro" style="max-width:40%; height:auto; display:block; margin:0; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
                                                                     <div style="flex:1;">
-                                                                        <!-- Adicione o texto explicativo aqui -->
-                                                                         
-                                                                         - Você pode cadastrar um Curso preenchendo os campos necessários.
-                                                                         - É possível também adicionar matérias ao Curso.
+                                                                        <h5 style="color:#dc3545;">Cadastrar Novo Curso</h5>
+                                                                        <ul>
+                                                                            <li>Preencha o <strong>Nome do Curso</strong></li>
+                                                                            <li>Adicione a <strong>Descrição</strong></li>
+                                                                            <li>Defina a <strong>Carga Horária total</strong></li>
+                                                                            <li>Configure as <strong>informações adicionais</strong></li>
+                                                                            <li>Clique em <strong>"Salvar Curso"</strong></li>
+                                                                        </ul>
                                                                     </div>
-                                                                    </div>
-                                                                    <br>
-                                                                    <div style="display:flex; align-items:center; gap:32px;">
-                                                                    <img src="assets/images/web_curso_cadastro_materia.jpg" alt="Login" style="max-width:40%; height:auto; display:block; margin:0;">
+                                                                </div>
+
+                                                                <div style="display:flex; align-items:center; gap:32px;">
+                                                                    <img src="assets/images/web_curso_cadastro_materia.jpg" alt="Adicionar Matérias" style="max-width:40%; height:auto; display:block; margin:0; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
                                                                     <div style="flex:1;">
-                                                                        <!-- Adicione o texto explicativo aqui -->
-                                                                         
-                                                                         - Preenchas os Campos da Matérica, Nome, Carga Horária e selecione um Professor, depois clique em Adicionar.
+                                                                        <h5 style="color:#dc3545;">Adicionar Matérias ao Curso</h5>
+                                                                        <ul>
+                                                                            <li>Digite o <strong>Nome da Matéria</strong></li>
+                                                                            <li>Defina a <strong>Carga Horária</strong> da matéria</li>
+                                                                            <li>Selecione um <strong>Professor responsável</strong></li>
+                                                                            <li>Clique em <strong>"Adicionar Matéria"</strong></li>
+                                                                        </ul>
+                                                                        <p style="color:#17a2b8; font-weight:bold;">📚 Organize o currículo do curso por matérias!</p>
                                                                     </div>
-                                                                    </div>
-
-
-                                                            </div></section>
+                                                                </div>
+                                                            </div>
+                                                        </div></section>
 
                                                         <!-- WEB CURSO RELATÓRIO -->
                                                         <section id="web-curso-relatorio" class="doc-section"><h2 class="section-title section-title-red"><a href="#" class="toggle-content" style="text-decoration:none;color:inherit;">WEB: Curso Relatório <span style="font-size:0.8em;float:right;">&#9660;</span></a></h2><div class="section-block" style="display:none;">
-                                                            <!-- Adicione o texto/imagem aqui -->
-                                                             <div style="display:flex; align-items:center; gap:32px;">
-                                                                    <img src="assets/images/web_curso_relatorio.jpg" alt="Login" style="max-width:40%; height:auto; display:block; margin:0;">
+                                                            <div style="padding:20px; background:#f8f9fa; border-left:4px solid #dc3545;">
+                                                                <h4 style="color:#dc3545; margin-bottom:15px;">Gerenciar Relatórios de Cursos</h4>
+                                                                
+                                                                <div style="display:flex; align-items:center; gap:32px; margin-bottom:20px;">
+                                                                    <img src="assets/images/web_curso_relatorio.jpg" alt="Lista de Cursos" style="max-width:40%; height:auto; display:block; margin:0; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
                                                                     <div style="flex:1;">
-                                                                        <!-- Adicione o texto explicativo aqui -->
-                                                                         
-                                                                         - Neste relatório você tem acesso à todos os Cursos cadastrados.
+                                                                        <h5 style="color:#dc3545;">Visualizar Cursos</h5>
+                                                                        <ul>
+                                                                            <li>Acesse a <strong>lista de todos os cursos</strong></li>
+                                                                            <li>Veja <strong>matérias e professores</strong> associados</li>
+                                                                            <li>Consulte <strong>carga horária total</strong></li>
+                                                                            <li>Filtre por <strong>nome ou categoria</strong></li>
+                                                                        </ul>
                                                                     </div>
-                                                                    </div>
-                                                                    <br>
-                                                                    <div style="display:flex; align-items:center; gap:32px;">
-                                                                    <img src="assets/images/web_curso_relatorio_editar.jpg" alt="Login" style="max-width:40%; height:auto; display:block; margin:0;">
-                                                                    <div style="flex:1;">
-                                                                        <!-- Adicione o texto explicativo aqui -->
-                                                                         
-                                                                         - Você pode editar um Curso, preenchendo os campos necessários e clicando em Atualizar.
-                                                                    </div>
-                                                                    </div>
-                                                                    <br>
-                                                                    <div style="display:flex; align-items:center; gap:32px;">
-                                                                    <img src="assets/images/web_curso_relatorio_imprimir.jpg" alt="Login" style="max-width:40%; height:auto; display:block; margin:0;">
-                                                                    <div style="flex:1;">
-                                                                        <!-- Adicione o texto explicativo aqui -->
-                                                                         
-                                                                         - Você pode exportar um relatório em PDF clicando no botão Exportar.
-                                                                    </div>
-                                                                    </div>
+                                                                </div>
 
-                                                            </div></section>
+                                                                <div style="display:flex; align-items:center; gap:32px; margin-bottom:20px;">
+                                                                    <img src="assets/images/web_curso_relatorio_editar.jpg" alt="Editar Curso" style="max-width:40%; height:auto; display:block; margin:0; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+                                                                    <div style="flex:1;">
+                                                                        <h5 style="color:#dc3545;">Editar Curso</h5>
+                                                                        <ul>
+                                                                            <li>Clique no <strong>ícone de edição</strong></li>
+                                                                            <li>Modifique <strong>informações do curso</strong></li>
+                                                                            <li>Adicione ou remova <strong>matérias</strong></li>
+                                                                            <li>Clique em <strong>"Atualizar"</strong></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div style="display:flex; align-items:center; gap:32px;">
+                                                                    <img src="assets/images/web_curso_relatorio_imprimir.jpg" alt="Exportar Relatório" style="max-width:40%; height:auto; display:block; margin:0; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+                                                                    <div style="flex:1;">
+                                                                        <h5 style="color:#dc3545;">Exportar Relatório</h5>
+                                                                        <ul>
+                                                                            <li>Selecione os <strong>cursos desejados</strong></li>
+                                                                            <li>Clique em <strong>"Exportar"</strong></li>
+                                                                            <li>Baixe o arquivo <strong>PDF</strong></li>
+                                                                        </ul>
+                                                                        <p style="color:#28a745; font-weight:bold;">📄 Relatório detalhado dos cursos!</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div></section>
 
                                                         <!-- WEB MONITORES -->
                                                         <section id="web-monitores" class="doc-section"><h2 class="section-title section-title-red"><a href="#" class="toggle-content" style="text-decoration:none;color:inherit;">WEB: Monitores <span style="font-size:0.8em;float:right;">&#9660;</span></a></h2><div class="section-block" style="display:none;">
-                                                            <!-- Adicione o texto/imagem aqui -->
-                                                             <div style="display:flex; align-items:center; gap:32px;">
-                                                                    <img src="assets/images/web_monitores.jpg" alt="Login" style="max-width:40%; height:auto; display:block; margin:0;">
+                                                            <div style="padding:20px; background:#f8f9fa; border-left:4px solid #dc3545;">
+                                                                <h4 style="color:#dc3545; margin-bottom:15px;">Sistema de Monitoria - Controle de Ponto</h4>
+                                                                
+                                                                <div style="display:flex; align-items:center; gap:32px; margin-bottom:20px;">
+                                                                    <img src="assets/images/web_monitores.jpg" alt="WEB Monitores" style="max-width:40%; height:auto; display:block; margin:0; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
                                                                     <div style="flex:1;">
-                                                                        <!-- Adicione o texto explicativo aqui -->
-                                                                         
-                                                                         - Neste relatório você tem acesso à todos os monitores cadastrados.
+                                                                        <h5 style="color:#dc3545;">Gerenciar Monitores</h5>
+                                                                        <ul>
+                                                                            <li>Visualize <strong>todos os monitores</strong> cadastrados</li>
+                                                                            <li>Acompanhe <strong>registro de pontos</strong></li>
+                                                                            <li>Consulte <strong>horários de entrada/saída</strong></li>
+                                                                            <li>Monitore <strong>frequência e pontualidade</strong></li>
+                                                                        </ul>
                                                                     </div>
-                                                                    </div>
-                                                                    <br>
-                                                                    <div style="display:flex; align-items:center; gap:32px;">
-                                                                    <img src="assets/images/web_monitores_imprimir.jpg" alt="Login" style="max-width:40%; height:auto; display:block; margin:0;">
-                                                                    <div style="flex:1;">
-                                                                        <!-- Adicione o texto explicativo aqui -->
-                                                                         
-                                                                         - Você pode exportar um relatório em PDF clicando no botão Exportar.
-                                                                    </div>
-                                                                    </div>
+                                                                </div>
 
-                                                            </div></section>
+                                                                <div style="display:flex; align-items:center; gap:32px;">
+                                                                    <img src="assets/images/web_monitores_imprimir.jpg" alt="Exportar Relatório Monitores" style="max-width:40%; height:auto; display:block; margin:0; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+                                                                    <div style="flex:1;">
+                                                                        <h5 style="color:#dc3545;">Relatórios de Monitoria</h5>
+                                                                        <ul>
+                                                                            <li>Selecione o <strong>período desejado</strong></li>
+                                                                            <li>Filtre por <strong>monitor específico</strong></li>
+                                                                            <li>Clique em <strong>"Exportar PDF"</strong></li>
+                                                                        </ul>
+                                                                        <p style="color:#28a745; font-weight:bold;">⏰ Controle completo de frequência!</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div></section>
 
                                                         <!-- WEB BOT -->
                                                         <section id="web-bot" class="doc-section"><h2 class="section-title section-title-red"><a href="#" class="toggle-content" style="text-decoration:none;color:inherit;">WEB: Bot <span style="font-size:0.8em;float:right;">&#9660;</span></a></h2><div class="section-block" style="display:none;">
-                                                            <!-- Adicione o texto/imagem aqui -->
-                                                             <div style="display:flex; align-items:center; gap:32px;">
-                                                                    <img src="assets/images/web_bot.jpg" alt="Login" style="max-width:40%; height:auto; display:block; margin:0;">
+                                                            <div style="padding:20px; background:#f8f9fa; border-left:4px solid #dc3545;">
+                                                                <h4 style="color:#dc3545; margin-bottom:15px;">Assistente Virtual Inteligente</h4>
+                                                                
+                                                                <div style="display:flex; align-items:center; gap:32px; margin-bottom:15px;">
+                                                                    <img src="assets/images/web_bot.jpg" alt="WEB Bot" style="max-width:40%; height:auto; display:block; margin:0; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
                                                                     <div style="flex:1;">
-                                                                        <!-- Adicione o texto explicativo aqui -->
-                                                                         
-                                                                         - Você pode utilizar o Bot para realizar consultas rápidas sobre as funções do sistema.
+                                                                        <h5 style="color:#dc3545;">Como Usar o Bot</h5>
+                                                                        <ul>
+                                                                            <li>Clique no <strong>ícone do chat</strong></li>
+                                                                            <li>Digite sua <strong>pergunta ou dúvida</strong></li>
+                                                                            <li>Receba <strong>respostas instantâneas</strong></li>
+                                                                            <li>Obtenha <strong>ajuda contextual</strong></li>
+                                                                        </ul>
+                                                                        <p><strong>Exemplos de perguntas:</strong></p>
+                                                                        <ul style="color:#6c757d; font-style:italic;">
+                                                                            <li>"Como cadastrar um professor?"</li>
+                                                                            <li>"Onde encontro os relatórios?"</li>
+                                                                            <li>"Como exportar dados?"</li>
+                                                                        </ul>
+                                                                        <p style="color:#17a2b8; font-weight:bold;">🤖 Assistente disponível 24/7!</p>
                                                                     </div>
-                                                                    </div>
-
-                                                            </div></section>
+                                                                </div>
+                                                            </div>
+                                                        </div></section>
 
                                                         <!-- APP LOGIN -->
                                                         <section id="app-login" class="doc-section"><h2 class="section-title section-title-red"><a href="#" class="toggle-content" style="text-decoration:none;color:inherit;">APP: Login <span style="font-size:0.8em;float:right;">&#9660;</span></a></h2><div class="section-block" style="display:none;">
-                                                            <!-- Adicione o texto/imagem aqui -->
-                                                             <div style="display:flex; align-items:center; gap:32px;">
-                                                                    <img src="assets/images/login.jpg" alt="Login" style="max-width:40%; height:auto; display:block; margin:0;">
+                                                            <div style="padding:20px; background:#f8f9fa; border-left:4px solid #dc3545;">
+                                                                <h4 style="color:#dc3545; margin-bottom:15px;">Como Fazer Login no Aplicativo Móvel</h4>
+                                                                <div style="display:flex; align-items:center; gap:32px; margin-bottom:15px;">
+                                                                    <img src="assets/images/login.jpg" alt="APP Login" style="max-width:40%; height:auto; display:block; margin:0; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
                                                                     <div style="flex:1;">
-                                                                        <!-- Adicione o texto explicativo aqui -->
-                                                                         - Digitar o Email e Senha cadastrados e clicar em "Entrar" para acessar o sistema.
+                                                                        <p><strong>Passos para acessar o aplicativo:</strong></p>
+                                                                        <ul>
+                                                                            <li>Abra o aplicativo no seu dispositivo móvel</li>
+                                                                            <li>Digite seu <strong>Email</strong> cadastrado</li>
+                                                                            <li>Digite sua <strong>Senha</strong></li>
+                                                                            <li>Toque no botão <strong>"Entrar"</strong></li>
+                                                                        </ul>
+                                                                        <p style="color:#28a745; font-weight:bold;">📱 Acesso rápido e seguro pelo seu celular!</p>
                                                                     </div>
                                                                 </div>
-                                                            
+                                                            </div>
                                                         </div></section>
 
                                                         <!-- APP CADASTRO -->
                                                         <section id="app-cadastro" class="doc-section"><h2 class="section-title section-title-red"><a href="#" class="toggle-content" style="text-decoration:none;color:inherit;">APP: Cadastro <span style="font-size:0.8em;float:right;">&#9660;</span></a></h2><div class="section-block" style="display:none;">
-                                                            <!-- Adicione o texto/imagem aqui -->
-                                                             <div style="display:flex; align-items:center; gap:32px;">
-                                                                    <img src="assets/images/cadastro.jpg" alt="Login" style="max-width:40%; height:auto; display:block; margin:0;">
+                                                            <div style="padding:20px; background:#f8f9fa; border-left:4px solid #dc3545;">
+                                                                <h4 style="color:#dc3545; margin-bottom:15px;">Como se Cadastrar no Aplicativo Móvel</h4>
+                                                                <div style="display:flex; align-items:center; gap:32px; margin-bottom:15px;">
+                                                                    <img src="assets/images/cadastro.jpg" alt="APP Cadastro" style="max-width:40%; height:auto; display:block; margin:0; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
                                                                     <div style="flex:1;">
-                                                                        <!-- Adicione o texto explicativo aqui -->
-                                                                         
-                                                                      - Digitar o seu Nome, Email e Senha e clicar em "Cadastrar" para salvar no sistema.
+                                                                        <p><strong>Passos para se cadastrar no app:</strong></p>
+                                                                        <ul>
+                                                                            <li>Baixe e instale o aplicativo</li>
+                                                                            <li>Toque em <strong>"Criar Conta"</strong></li>
+                                                                            <li>Digite seu <strong>Nome completo</strong></li>
+                                                                            <li>Digite um <strong>Email válido</strong></li>
+                                                                            <li>Crie uma <strong>Senha segura</strong></li>
+                                                                            <li>Toque em <strong>"Cadastrar"</strong></li>
+                                                                        </ul>
+                                                                        <p style="color:#28a745; font-weight:bold;">✓ Cadastro rápido e fácil pelo celular!</p>
                                                                     </div>
-                                                                    </div>
-                                                                    
-
-                                                            
+                                                                </div>
+                                                            </div>
                                                         </div></section>
 
                                                         <!-- APP ESQUECEU SUA SENHA -->
@@ -359,234 +466,493 @@
 
                                                         <!-- APP INDICADORES -->
                                                         <section id="app-indicadores" class="doc-section"><h2 class="section-title section-title-red"><a href="#" class="toggle-content" style="text-decoration:none;color:inherit;">APP: Indicadores <span style="font-size:0.8em;float:right;">&#9660;</span></a></h2><div class="section-block" style="display:none;">
-                                                            <!-- Adicione o texto/imagem aqui -->
-                                                             <div style="display:flex; align-items:center; gap:32px;">
-                                                                    <img src="assets/images/indicador.jpg" alt="Login" style="max-width:40%; height:auto; display:block; margin:0;">
+                                                            <div style="padding:20px; background:#f8f9fa; border-left:4px solid #dc3545;">
+                                                                <h4 style="color:#dc3545; margin-bottom:15px;">Painel de Indicadores no Aplicativo</h4>
+                                                                
+                                                                <div style="display:flex; align-items:center; gap:32px; margin-bottom:20px;">
+                                                                    <img src="assets/images/indicador.jpg" alt="APP Indicadores Barras" style="max-width:40%; height:auto; display:block; margin:0; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
                                                                     <div style="flex:1;">
-                                                                        <!-- Adicione o texto explicativo aqui -->
-                                                                         - Neste painel são mostrados os indicadores do sistema em barras.
+                                                                        <h5 style="color:#dc3545;">Gráficos em Barras</h5>
+                                                                        <ul>
+                                                                            <li>Visualize <strong>estatísticas em barras</strong></li>
+                                                                            <li>Compare <strong>métricas diferentes</strong></li>
+                                                                            <li>Acompanhe <strong>evolução temporal</strong></li>
+                                                                            <li>Analise <strong>desempenho por período</strong></li>
+                                                                        </ul>
                                                                     </div>
                                                                 </div>
-                                                                <br>
+
                                                                 <div style="display:flex; align-items:center; gap:32px;">
-                                                                    <img src="assets/images/indicador1.jpg" alt="Login" style="max-width:40%; height:auto; display:block; margin:0;">
+                                                                    <img src="assets/images/indicador1.jpg" alt="APP Indicadores Pizza" style="max-width:40%; height:auto; display:block; margin:0; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
                                                                     <div style="flex:1;">
-                                                                        <!-- Adicione o texto explicativo aqui -->
-                                                                         - Neste painel são mostrados os indicadores do sistema em gráfico de pizza.
+                                                                        <h5 style="color:#dc3545;">Gráficos de Pizza</h5>
+                                                                        <ul>
+                                                                            <li>Veja <strong>proporções e percentuais</strong></li>
+                                                                            <li>Analise <strong>distribuição de dados</strong></li>
+                                                                            <li>Identifique <strong>maiores categorias</strong></li>
+                                                                            <li>Compreenda <strong>composição total</strong></li>
+                                                                        </ul>
+                                                                        <p style="color:#17a2b8; font-weight:bold;">📊 Dashboards interativos no seu celular!</p>
                                                                     </div>
                                                                 </div>
-
-
-                                                            </div></section>
+                                                            </div>
+                                                        </div></section>
 
 
 
                                                         <!-- APP MENU -->
                                                         <section id="app-menu" class="doc-section"><h2 class="section-title section-title-red"><a href="#" class="toggle-content" style="text-decoration:none;color:inherit;">APP: Menu <span style="font-size:0.8em;float:right;">&#9660;</span></a></h2><div class="section-block" style="display:none;">
-                                                            <!-- Adicione o texto/imagem aqui -->
-                                                             <div style="display:flex; align-items:center; gap:32px;">
-                                                                    <img src="assets/images/menu_app.jpg" alt="Login" style="max-width:40%; height:auto; display:block; margin:0;">
+                                                            <div style="padding:20px; background:#f8f9fa; border-left:4px solid #dc3545;">
+                                                                <h4 style="color:#dc3545; margin-bottom:15px;">Navegação no Aplicativo Móvel</h4>
+                                                                
+                                                                <div style="display:flex; align-items:center; gap:32px; margin-bottom:15px;">
+                                                                    <img src="assets/images/menu_app.jpg" alt="APP Menu" style="max-width:40%; height:auto; display:block; margin:0; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
                                                                     <div style="flex:1;">
-                                                                        <!-- Adicione o texto explicativo aqui -->
-                                                                         - Clicando no Menu Hamburger você terá acesso às funcionalidades do sistema.
+                                                                        <h5 style="color:#dc3545;">Menu Hamburger</h5>
+                                                                        <ul>
+                                                                            <li>Toque no <strong>ícone das três linhas</strong> (☰)</li>
+                                                                            <li>Acesse todas as <strong>funcionalidades</strong></li>
+                                                                            <li>Navegue entre <strong>diferentes seções</strong></li>
+                                                                            <li>Encontre <strong>opções rápidamente</strong></li>
+                                                                        </ul>
+                                                                        <p><strong>Funções disponíveis:</strong></p>
+                                                                        <ul style="color:#6c757d; font-style:italic;">
+                                                                            <li>Cadastros e Relatórios</li>
+                                                                            <li>Indicadores e Gráficos</li>
+                                                                            <li>Controle de Monitores</li>
+                                                                            <li>Configurações e Ajuda</li>
+                                                                        </ul>
+                                                                        <p style="color:#28a745; font-weight:bold;">📱 Navegação intuitiva e rápida!</p>
                                                                     </div>
                                                                 </div>
-
-                                                            </div></section>
+                                                            </div>
+                                                        </div></section>
 
                                                         <!-- APP PROFESSOR CADASTRO -->
                                                         <section id="app-prof-cadastro" class="doc-section"><h2 class="section-title section-title-red"><a href="#" class="toggle-content" style="text-decoration:none;color:inherit;">APP: Professor Cadastro <span style="font-size:0.8em;float:right;">&#9660;</span></a></h2><div class="section-block" style="display:none;">
-                                                            <!-- Adicione o texto/imagem aqui -->
-                                                             <div style="display:flex; align-items:center; gap:32px;">
-                                                                    <img src="assets/images/cadastro_professor.jpg" alt="Login" style="max-width:40%; height:auto; display:block; margin:0;">
+                                                            <div style="padding:20px; background:#f8f9fa; border-left:4px solid #dc3545;">
+                                                                <h4 style="color:#dc3545; margin-bottom:15px;">Cadastrar Professores pelo Aplicativo</h4>
+                                                                
+                                                                <div style="display:flex; align-items:center; gap:32px; margin-bottom:20px;">
+                                                                    <img src="assets/images/cadastro_professor.jpg" alt="APP Professor Cadastro" style="max-width:40%; height:auto; display:block; margin:0; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
                                                                     <div style="flex:1;">
-                                                                        <!-- Adicione o texto explicativo aqui -->
-                                                                         - Você pode cadastrar um professor preenchendo os campos ou Importando uma planilha CSV.
+                                                                        <h5 style="color:#dc3545;">Iniciar Cadastro</h5>
+                                                                        <ul>
+                                                                            <li>Acesse o <strong>menu de cadastros</strong></li>
+                                                                            <li>Selecione <strong>"Professor"</strong></li>
+                                                                            <li>Escolha entre <strong>cadastro manual ou CSV</strong></li>
+                                                                            <li>Preencha os <strong>dados solicitados</strong></li>
+                                                                        </ul>
                                                                     </div>
                                                                 </div>
-                                                                <br>
+
+                                                                <div style="display:flex; align-items:center; gap:32px; margin-bottom:20px;">
+                                                                    <img src="assets/images/cadastro_professor1.jpg" alt="Dados Básicos" style="max-width:40%; height:auto; display:block; margin:0; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+                                                                    <div style="flex:1;">
+                                                                        <h5 style="color:#dc3545;">Dados Básicos</h5>
+                                                                        <ul>
+                                                                            <li>Digite o <strong>Nome completo</strong></li>
+                                                                            <li>Insira um <strong>Email válido</strong></li>
+                                                                            <li>Adicione o <strong>Telefone</strong></li>
+                                                                            <li>Selecione <strong>Matéria e Curso</strong></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
 
                                                                 <div style="display:flex; align-items:center; gap:32px;">
-                                                                    <img src="assets/images/cadastro_professor1.jpg" alt="Login" style="max-width:40%; height:auto; display:block; margin:0;">
+                                                                    <img src="assets/images/cadastro_professor4.jpg" alt="Dados Complementares" style="max-width:40%; height:auto; display:block; margin:0; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
                                                                     <div style="flex:1;">
-                                                                        <!-- Adicione o texto explicativo aqui -->
-                                                                         - Preencha os Campos Nome, Email, Telefone, Matéria e Curso para cadastrar um professor.
-                                                                         
+                                                                        <h5 style="color:#dc3545;">Dados Complementares</h5>
+                                                                        <ul>
+                                                                            <li>Link do <strong>Currículo Lattes</strong> (opcional)</li>
+                                                                            <li>Adicione <strong>referências profissionais</strong></li>
+                                                                            <li>Defina o <strong>status ativo/inativo</strong></li>
+                                                                            <li>Toque em <strong>"Salvar"</strong></li>
+                                                                        </ul>
+                                                                        <p style="color:#28a745; font-weight:bold;">✓ Cadastro completo pelo celular!</p>
                                                                     </div>
                                                                 </div>
-
-                                                                <br>
-
-                                                                <div style="display:flex; align-items:center; gap:32px;">
-                                                                    <img src="assets/images/cadastro_professor4.jpg" alt="Login" style="max-width:40%; height:auto; display:block; margin:0;">
-                                                                    <div style="flex:1;">
-                                                                        <!-- Adicione o texto explicativo aqui -->
-                                                                         - Preencha os Campos Lattes, Referência e se Professor está ativo.
-                                                                         
-                                                                    </div>
-                                                                </div>
-
-                                                            </div></section>
+                                                            </div>
+                                                        </div></section>
 
                                                         <!-- APP PROFESSOR RELATÓRIO -->                                                            
                                                         <section id="app-prof-relatorio" class="doc-section"><h2 class="section-title section-title-red"><a href="#" class="toggle-content" style="text-decoration:none;color:inherit;">APP: Professor Relatório <span style="font-size:0.8em;float:right;">&#9660;</span></a></h2><div class="section-block" style="display:none;">
-                                                            <!-- Adicione o texto/imagem aqui -->
-                                                             <div style="display:flex; align-items:center; gap:32px;">
-                                                                    <img src="assets/images/professor_relatorio.jpg" alt="Login" style="max-width:40%; height:auto; display:block; margin:0;">
+                                                            <div style="padding:20px; background:#f8f9fa; border-left:4px solid #dc3545;">
+                                                                <h4 style="color:#dc3545; margin-bottom:15px;">Relatórios de Professores no App</h4>
+                                                                
+                                                                <div style="display:flex; align-items:center; gap:32px; margin-bottom:20px;">
+                                                                    <img src="assets/images/professor_relatorio.jpg" alt="APP Lista Professores" style="max-width:40%; height:auto; display:block; margin:0; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
                                                                     <div style="flex:1;">
-                                                                        <!-- Adicione o texto explicativo aqui -->
-                                                                         - Neste relatório você tem acesso à todos os professores cadastrados.
-                                                                         
+                                                                        <h5 style="color:#dc3545;">Lista de Professores</h5>
+                                                                        <ul>
+                                                                            <li>Veja <strong>todos os professores</strong> cadastrados</li>
+                                                                            <li>Use a <strong>busca rápida</strong> por nome</li>
+                                                                            <li>Filtre por <strong>matéria ou curso</strong></li>
+                                                                            <li>Acesse <strong>detalhes completos</strong></li>
+                                                                        </ul>
                                                                     </div>
                                                                 </div>
-                                                                 <br>
 
-                                                                     <div style="display:flex; align-items:center; gap:32px;">
-                                                                    <img src="assets/images/professor_editar1.jpg" alt="Login" style="max-width:40%; height:auto; display:block; margin:0;">
+                                                                <div style="display:flex; align-items:center; gap:32px;">
+                                                                    <img src="assets/images/professor_editar1.jpg" alt="APP Editar Professor" style="max-width:40%; height:auto; display:block; margin:0; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
                                                                     <div style="flex:1;">
-                                                                        <!-- Adicione o texto explicativo aqui -->
-                                                                         
-                                                                         - Você pode editar um professor, preenchendo os campos necessários e clicando em Atualizar.
+                                                                        <h5 style="color:#dc3545;">Editar Professor</h5>
+                                                                        <ul>
+                                                                            <li>Toque no <strong>professor desejado</strong></li>
+                                                                            <li>Selecione <strong>"Editar"</strong></li>
+                                                                            <li>Atualize os <strong>dados necessários</strong></li>
+                                                                            <li>Toque em <strong>"Salvar Alterações"</strong></li>
+                                                                        </ul>
+                                                                        <p style="color:#28a745; font-weight:bold;">📱 Edição rápida pelo celular!</p>
                                                                     </div>
-                                                                    </div>                                                                    
-
-                                                            </div></section>
+                                                                </div>
+                                                            </div>
+                                                        </div></section>
 
                                                         <!-- APP CURSO CADASTRO -->
                                                         <section id="app-curso-cadastro" class="doc-section"><h2 class="section-title section-title-red"><a href="#" class="toggle-content" style="text-decoration:none;color:inherit;">APP: Curso Cadastro <span style="font-size:0.8em;float:right;">&#9660;</span></a></h2><div class="section-block" style="display:none;">
-                                                            <!-- Adicione o texto/imagem aqui -->
-                                                              <div style="display:flex; align-items:center; gap:32px;">
-                                                                    <img src="assets/images/cadastrar_curso.jpg" alt="Login" style="max-width:40%; height:auto; display:block; margin:0;">
+                                                            <div style="padding:20px; background:#f8f9fa; border-left:4px solid #dc3545;">
+                                                                <h4 style="color:#dc3545; margin-bottom:15px;">Cadastrar Cursos pelo Aplicativo</h4>
+                                                                
+                                                                <div style="display:flex; align-items:center; gap:32px; margin-bottom:20px;">
+                                                                    <img src="assets/images/cadastrar_curso.jpg" alt="APP Curso Cadastro" style="max-width:40%; height:auto; display:block; margin:0; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
                                                                     <div style="flex:1;">
-                                                                        <!-- Adicione o texto explicativo aqui -->
-                                                                         
-                                                                         - Você pode cadastrar um Curso preenchendo os campos necessários.
-                                                                         - É possível também adicionar matérias ao Curso.
+                                                                        <h5 style="color:#dc3545;">Criar Novo Curso</h5>
+                                                                        <ul>
+                                                                            <li>Acesse o <strong>menu de cadastros</strong></li>
+                                                                            <li>Toque em <strong>"Novo Curso"</strong></li>
+                                                                            <li>Preencha <strong>nome e descrição</strong></li>
+                                                                            <li>Defina a <strong>carga horária total</strong></li>
+                                                                            <li>Configure <strong>parâmetros adicionais</strong></li>
+                                                                        </ul>
                                                                     </div>
-                                                                    </div>
-                                                                    <br>
-                                                                    <div style="display:flex; align-items:center; gap:32px;">
-                                                                    <img src="assets/images/cadastrar_curso_materia.jpg" alt="Login" style="max-width:40%; height:auto; display:block; margin:0;">
+                                                                </div>
+
+                                                                <div style="display:flex; align-items:center; gap:32px;">
+                                                                    <img src="assets/images/cadastrar_curso_materia.jpg" alt="APP Adicionar Matérias" style="max-width:40%; height:auto; display:block; margin:0; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
                                                                     <div style="flex:1;">
-                                                                        <!-- Adicione o texto explicativo aqui -->
-                                                                         
-                                                                         - Preenchas os Campos da Matérica, Nome, Carga Horária e selecione um Professor, depois clique em Adicionar.
+                                                                        <h5 style="color:#dc3545;">Adicionar Matérias</h5>
+                                                                        <ul>
+                                                                            <li>Digite o <strong>nome da matéria</strong></li>
+                                                                            <li>Informe a <strong>carga horária</strong></li>
+                                                                            <li>Selecione o <strong>professor responsável</strong></li>
+                                                                            <li>Toque em <strong>"Adicionar Matéria"</strong></li>
+                                                                        </ul>
+                                                                        <p style="color:#17a2b8; font-weight:bold;">📚 Monte o currículo do curso!</p>
                                                                     </div>
-                                                                    </div>
-
-
-                                                            </div></section>
+                                                                </div>
+                                                            </div>
+                                                        </div></section>
 
                                                         <!-- APP CURSO RELATÓRIO -->
                                                         <section id="app-curso-relatorio" class="doc-section"><h2 class="section-title section-title-red"><a href="#" class="toggle-content" style="text-decoration:none;color:inherit;">APP: Curso Relatório <span style="font-size:0.8em;float:right;">&#9660;</span></a></h2><div class="section-block" style="display:none;">
-                                                            <!-- Adicione o texto/imagem aqui -->
-                                                             <div style="display:flex; align-items:center; gap:32px;">
-                                                                    <img src="assets/images/listar_curso.jpg" alt="Login" style="max-width:40%; height:auto; display:block; margin:0;">
+                                                            <div style="padding:20px; background:#f8f9fa; border-left:4px solid #dc3545;">
+                                                                <h4 style="color:#dc3545; margin-bottom:15px;">Relatórios de Cursos no Aplicativo</h4>
+                                                                
+                                                                <div style="display:flex; align-items:center; gap:32px; margin-bottom:20px;">
+                                                                    <img src="assets/images/listar_curso.jpg" alt="APP Lista Cursos" style="max-width:40%; height:auto; display:block; margin:0; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
                                                                     <div style="flex:1;">
-                                                                        <!-- Adicione o texto explicativo aqui -->
-                                                                         
-                                                                         - Neste relatório você tem acesso à todos os Cursos cadastrados.
+                                                                        <h5 style="color:#dc3545;">Lista de Cursos</h5>
+                                                                        <ul>
+                                                                            <li>Visualize <strong>todos os cursos</strong> disponíveis</li>
+                                                                            <li>Veja <strong>matérias e professores</strong></li>
+                                                                            <li>Consulte <strong>carga horária</strong></li>
+                                                                            <li>Filtre por <strong>categoria ou nome</strong></li>
+                                                                        </ul>
                                                                     </div>
-                                                                    </div>
-                                                                    <br>
-                                                                    <div style="display:flex; align-items:center; gap:32px;">
-                                                                    <img src="assets/images/curso_editar.jpg" alt="Login" style="max-width:40%; height:auto; display:block; margin:0;">
-                                                                    <div style="flex:1;">
-                                                                        <!-- Adicione o texto explicativo aqui -->
-                                                                         
-                                                                         - Você pode editar um Curso, preenchendo os campos necessários e clicando em Atualizar.
-                                                                    </div>
-                                                                    </div>
-                                                                    <br>
-                                                                    <div style="display:flex; align-items:center; gap:32px;">
-                                                                    <img src="assets/images/curso_relatorio_imprimir.jpg" alt="Login" style="max-width:40%; height:auto; display:block; margin:0;">
-                                                                    <div style="flex:1;">
-                                                                        <!-- Adicione o texto explicativo aqui -->
-                                                                         
-                                                                         - Você pode exportar um relatório em PDF clicando no botão Exportar.
-                                                                    </div>
-                                                                    </div>
+                                                                </div>
 
+                                                                <div style="display:flex; align-items:center; gap:32px; margin-bottom:20px;">
+                                                                    <img src="assets/images/curso_editar.jpg" alt="APP Editar Curso" style="max-width:40%; height:auto; display:block; margin:0; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+                                                                    <div style="flex:1;">
+                                                                        <h5 style="color:#dc3545;">Editar Curso</h5>
+                                                                        <ul>
+                                                                            <li>Toque no <strong>curso desejado</strong></li>
+                                                                            <li>Selecione <strong>"Editar"</strong></li>
+                                                                            <li>Modifique <strong>informações necessárias</strong></li>
+                                                                            <li>Toque em <strong>"Salvar"</strong></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
 
-                                                            </div></section>
+                                                                <div style="display:flex; align-items:center; gap:32px;">
+                                                                    <img src="assets/images/curso_relatorio_imprimir.jpg" alt="APP Exportar" style="max-width:40%; height:auto; display:block; margin:0; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+                                                                    <div style="flex:1;">
+                                                                        <h5 style="color:#dc3545;">Exportar Dados</h5>
+                                                                        <ul>
+                                                                            <li>Acesse <strong>opções de exportação</strong></li>
+                                                                            <li>Escolha o <strong>formato desejado</strong></li>
+                                                                            <li>Toque em <strong>"Exportar PDF"</strong></li>
+                                                                            <li>Compartilhe ou salve o <strong>arquivo</strong></li>
+                                                                        </ul>
+                                                                        <p style="color:#28a745; font-weight:bold;">📄 Relatórios mobile!</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div></section>
 
                                                         <!-- APP MONITORES -->
                                                         <section id="app-monitores" class="doc-section"><h2 class="section-title section-title-red"><a href="#" class="toggle-content" style="text-decoration:none;color:inherit;">APP: Monitores <span style="font-size:0.8em;float:right;">&#9660;</span></a></h2><div class="section-block" style="display:none;">
-                                                            <!-- Adicione o texto/imagem aqui -->
-                                                             <div style="display:flex; align-items:center; gap:32px;">
-                                                                    <img src="assets/images/voz1.jpg" alt="Login" style="max-width:40%; height:auto; display:block; margin:0;">
+                                                            <div style="padding:20px; background:#f8f9fa; border-left:4px solid #dc3545;">
+                                                                <h4 style="color:#dc3545; margin-bottom:15px;">Sistema de Ponto por Voz - Aplicativo</h4>
+                                                                
+                                                                <h5 style="color:#dc3545; margin:20px 0 10px 0;">🎤 Cadastro de Voz</h5>
+                                                                <div style="display:flex; align-items:center; gap:32px; margin-bottom:15px;">
+                                                                    <img src="assets/images/voz1.jpg" alt="Cadastrar Voz - Passo 1" style="max-width:40%; height:auto; display:block; margin:0; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
                                                                     <div style="flex:1;">
-                                                                        <!-- Adicione o texto explicativo aqui -->
-                                                                         
-                                                                         - Para poder marcar o ponto é necessário cadastrar a voz.
+                                                                        <p><strong>Passo 1:</strong> Para registrar ponto, primeiro <strong>cadastre sua voz</strong> no sistema</p>
                                                                     </div>
-                                                                    </div>
-                                                                    <br>
-                                                                    <div style="display:flex; align-items:center; gap:32px;">
-                                                                    <img src="assets/images/voz2.jpg" alt="Login" style="max-width:40%; height:auto; display:block; margin:0;">
+                                                                </div>
+                                                                <div style="display:flex; align-items:center; gap:32px; margin-bottom:15px;">
+                                                                    <img src="assets/images/voz2.jpg" alt="Cadastrar Voz - Passo 2" style="max-width:40%; height:auto; display:block; margin:0; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
                                                                     <div style="flex:1;">
-                                                                        <!-- Adicione o texto explicativo aqui -->
-                                                                         
-                                                                         - É necessário ler a frase toda no tempo para poder cadastrar a voz.
+                                                                        <p><strong>Passo 2:</strong> Leia a <strong>frase completa</strong> de forma clara e no tempo limite</p>
                                                                     </div>
-                                                                    </div>
-                                                                     <br>
-                                                                    <div style="display:flex; align-items:center; gap:32px;">
-                                                                    <img src="assets/images/voz3.jpg" alt="Login" style="max-width:40%; height:auto; display:block; margin:0;">
+                                                                </div>
+                                                                <div style="display:flex; align-items:center; gap:32px; margin-bottom:20px;">
+                                                                    <img src="assets/images/voz3.jpg" alt="Cadastrar Voz - Passo 3" style="max-width:40%; height:auto; display:block; margin:0; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
                                                                     <div style="flex:1;">
-                                                                        <!-- Adicione o texto explicativo aqui -->
-                                                                         
-                                                                         - Depois de ler toda a frase, basta clicar em cadastrar Voz.
+                                                                        <p><strong>Passo 3:</strong> Após ler completamente, toque em <strong>"Cadastrar Voz"</strong></p>
                                                                     </div>
-                                                                    </div>
-                                                                     <br>
-                                                                    <div style="display:flex; align-items:center; gap:32px;">
-                                                                    <img src="assets/images/voz4.jpg" alt="Login" style="max-width:40%; height:auto; display:block; margin:0;">
+                                                                </div>
+                                                                <div style="display:flex; align-items:center; gap:32px; margin-bottom:25px;">
+                                                                    <img src="assets/images/voz4.jpg" alt="Voz Cadastrada" style="max-width:40%; height:auto; display:block; margin:0; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
                                                                     <div style="flex:1;">
-                                                                        <!-- Adicione o texto explicativo aqui -->
-                                                                         
-                                                                         - Você receberá uma confirmação de que a voz foi cadastrada com sucesso.
+                                                                        <p style="color:#28a745; font-weight:bold;">✓ Confirmação: Sua voz foi cadastrada com sucesso!</p>
                                                                     </div>
-                                                                    </div>
-                                                                     <br>
-                                                                    <div style="display:flex; align-items:center; gap:32px;">
-                                                                    <img src="assets/images/monitor.jpg" alt="Login" style="max-width:40%; height:auto; display:block; margin:0;">
+                                                                </div>
+
+                                                                <h5 style="color:#dc3545; margin:20px 0 10px 0;">⏰ Registro de Ponto</h5>
+                                                                <div style="display:flex; align-items:center; gap:32px; margin-bottom:15px;">
+                                                                    <img src="assets/images/monitor.jpg" alt="Registrar Ponto" style="max-width:40%; height:auto; display:block; margin:0; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
                                                                     <div style="flex:1;">
-                                                                        <!-- Adicione o texto explicativo aqui -->
-                                                                         
-                                                                         - Para registrar o ponto, clique em Registrar Entrada ou Saída.
+                                                                        <p><strong>Iniciar:</strong> Toque em <strong>"Registrar Entrada"</strong> ou <strong>"Registrar Saída"</strong></p>
                                                                     </div>
-                                                                    </div>
-                                                                     <br>
-                                                                    <div style="display:flex; align-items:center; gap:32px;">
-                                                                    <img src="assets/images/monitor1.jpg" alt="Login" style="max-width:40%; height:auto; display:block; margin:0;">
+                                                                </div>
+                                                                <div style="display:flex; align-items:center; gap:32px; margin-bottom:15px;">
+                                                                    <img src="assets/images/monitor1.jpg" alt="Verificar Localização" style="max-width:40%; height:auto; display:block; margin:0; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
                                                                     <div style="flex:1;">
-                                                                        <!-- Adicione o texto explicativo aqui -->
-                                                                         
-                                                                         - Verifique se a sua localização está no raio de 1Km da instituição.
+                                                                        <p><strong>Localização:</strong> Verifique se está no <strong>raio de 1km</strong> da instituição</p>
                                                                     </div>
-                                                                    </div>
-                                                                     <br>
-                                                                    <div style="display:flex; align-items:center; gap:32px;">
-                                                                    <img src="assets/images/monitor2.jpg" alt="Login" style="max-width:40%; height:auto; display:block; margin:0;">
+                                                                </div>
+                                                                <div style="display:flex; align-items:center; gap:32px; margin-bottom:15px;">
+                                                                    <img src="assets/images/monitor2.jpg" alt="Reconhecimento de Voz" style="max-width:40%; height:auto; display:block; margin:0; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
                                                                     <div style="flex:1;">
-                                                                        <!-- Adicione o texto explicativo aqui -->
-                                                                         
-                                                                         - Leia a frase de reconhecimento.
+                                                                        <p><strong>Autenticação:</strong> Leia a <strong>frase de reconhecimento</strong> para validar sua identidade</p>
                                                                     </div>
-                                                                    </div>
-                                                                     <br>
-                                                                    <div style="display:flex; align-items:center; gap:32px;">
-                                                                    <img src="assets/images/monitor3.jpg" alt="Login" style="max-width:40%; height:auto; display:block; margin:0;">
+                                                                </div>
+                                                                <div style="display:flex; align-items:center; gap:32px;">
+                                                                    <img src="assets/images/monitor3.jpg" alt="Confirmar Ponto" style="max-width:40%; height:auto; display:block; margin:0; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
                                                                     <div style="flex:1;">
-                                                                        <!-- Adicione o texto explicativo aqui -->
-                                                                         
-                                                                         - Clique no botão Confirmar Entrada, para registrar o ponto.
+                                                                        <p><strong>Finalizar:</strong> Toque em <strong>"Confirmar Entrada"</strong> para registrar o ponto</p>
+                                                                        <p style="color:#28a745; font-weight:bold;">🎯 Sistema seguro com biometria de voz e GPS!</p>
                                                                     </div>
-                                                                    </div>
-                                                                    
-                                                                    
-                                                            </div></section>
+                                                                </div>
+                                                            </div>
+                                                        </div></section>
+
+                                                        <!-- SEÇÃO FAQ -->
+
+                                                        <!-- FAQ LOGIN -->
+                                                        <section id="faq-login" class="doc-section"><h2 class="section-title section-title-green"><a href="#" class="toggle-content" style="text-decoration:none;color:inherit;">FAQ: Erro de Login <span style="font-size:0.8em;float:right;">&#9660;</span></a></h2><div class="section-block" style="display:none;">
+                                                            <div style="padding:20px; background:#f8f9fa; border-left:4px solid #28a745;">
+                                                                <h4 style="color:#28a745; margin-bottom:15px;">Problemas Comuns de Login</h4>
+                                                                <p><strong>Q: Não consigo fazer login, o que pode estar acontecendo?</strong></p>
+                                                                <p><strong>R:</strong> Verifique se:</p>
+                                                                <ul>
+                                                                    <li>Seu email está digitado corretamente (sem espaços extras)</li>
+                                                                    <li>Sua senha está correta (atenção para maiúsculas/minúsculas)</li>
+                                                                    <li>Seu cadastro foi aprovado pelo administrador</li>
+                                                                    <li>Sua conexão com a internet está funcionando</li>
+                                                                </ul>
+                                                                <p><strong>Q: Esqueci minha senha, como recuperar?</strong></p>
+                                                                <p><strong>R:</strong> Clique em "Esqueceu sua senha?" na tela de login e siga as instruções para receber um código de recuperação por email.</p>
+                                                                <p><strong>Q: Não estou recebendo o email de recuperação?</strong></p>
+                                                                <p><strong>R:</strong> Verifique sua caixa de spam ou lixo eletrônico. Se ainda assim não receber, entre em contato com o suporte técnico.</p>
+                                                            </div>
+                                                        </div></section>
+
+                                                        <!-- FAQ CADASTRO -->
+                                                        <section id="faq-cadastro" class="doc-section"><h2 class="section-title section-title-green"><a href="#" class="toggle-content" style="text-decoration:none;color:inherit;">FAQ: Erro no Cadastro <span style="font-size:0.8em;float:right;">&#9660;</span></a></h2><div class="section-block" style="display:none;">
+                                                            <div style="padding:20px; background:#f8f9fa; border-left:4px solid #28a745;">
+                                                                <h4 style="color:#28a745; margin-bottom:15px;">Problemas no Cadastro</h4>
+                                                                <p><strong>Q: Não consigo completar meu cadastro?</strong></p>
+                                                                <p><strong>R:</strong> Certifique-se de que:</p>
+                                                                <ul>
+                                                                    <li>Todos os campos obrigatórios estão preenchidos</li>
+                                                                    <li>O email digitado é válido e não está já cadastrado</li>
+                                                                    <li>A senha atende aos requisitos mínimos (6 caracteres)</li>
+                                                                    <li>A confirmação de senha está idêntica à senha</li>
+                                                                </ul>
+                                                                <p><strong>Q: Recebo mensagem de "Email já cadastrado"?</strong></p>
+                                                                <p><strong>R:</strong> Este email já existe no sistema. Tente fazer login ou usar a opção "Esqueci minha senha" se não lembrar da senha.</p>
+                                                                <p><strong>Q: O sistema não aceita minha senha?</strong></p>
+                                                                <p><strong>R:</strong> A senha deve ter pelo menos 6 caracteres. Recomendamos usar uma combinação de letras e números para maior segurança.</p>
+                                                            </div>
+                                                        </div></section>
+
+                                                        <!-- FAQ ESQUECEU SENHA -->
+                                                        <section id="faq-esqueceu" class="doc-section"><h2 class="section-title section-title-green"><a href="#" class="toggle-content" style="text-decoration:none;color:inherit;">FAQ: Erro no Esqueceu sua senha <span style="font-size:0.8em;float:right;">&#9660;</span></a></h2><div class="section-block" style="display:none;">
+                                                            <div style="padding:20px; background:#f8f9fa; border-left:4px solid #28a745;">
+                                                                <h4 style="color:#28a745; margin-bottom:15px;">Problemas na Recuperação de Senha</h4>
+                                                                <p><strong>Q: Não recebo o código de verificação por email?</strong></p>
+                                                                <p><strong>R:</strong> Soluções possíveis:</p>
+                                                                <ul>
+                                                                    <li>Verifique sua caixa de spam/lixo eletrônico</li>
+                                                                    <li>Aguarde até 10 minutos - o email pode demorar para chegar</li>
+                                                                    <li>Confirme se o email digitado está correto</li>
+                                                                    <li>Tente novamente após alguns minutos</li>
+                                                                </ul>
+                                                                <p><strong>Q: O código de verificação não funciona?</strong></p>
+                                                                <p><strong>R:</strong> Verifique se:</p>
+                                                                <ul>
+                                                                    <li>O código foi digitado corretamente (sem espaços)</li>
+                                                                    <li>O código não expirou (válido por 15 minutos)</li>
+                                                                    <li>Você está usando o código mais recente enviado</li>
+                                                                </ul>
+                                                                <p><strong>Q: Como criar uma nova senha segura?</strong></p>
+                                                                <p><strong>R:</strong> Use pelo menos 6 caracteres, combinando letras maiúsculas, minúsculas e números. Evite informações pessoais óbvias.</p>
+                                                            </div>
+                                                        </div></section>
+
+                                                        <!-- FAQ PROFESSOR CADASTRO -->
+                                                        <section id="faq-prof-cadastro" class="doc-section"><h2 class="section-title section-title-green"><a href="#" class="toggle-content" style="text-decoration:none;color:inherit;">FAQ: Erro no Professor Cadastro <span style="font-size:0.8em;float:right;">&#9660;</span></a></h2><div class="section-block" style="display:none;">
+                                                            <div style="padding:20px; background:#f8f9fa; border-left:4px solid #28a745;">
+                                                                <h4 style="color:#28a745; margin-bottom:15px;">Problemas no Cadastro de Professor</h4>
+                                                                <p><strong>Q: Erro ao cadastrar professor manualmente?</strong></p>
+                                                                <p><strong>R:</strong> Verifique se:</p>
+                                                                <ul>
+                                                                    <li>Todos os campos obrigatórios estão preenchidos</li>
+                                                                    <li>O email do professor é único no sistema</li>
+                                                                    <li>O número de telefone está no formato correto</li>
+                                                                    <li>Os campos de matéria e curso estão selecionados</li>
+                                                                </ul>
+                                                                <p><strong>Q: Problemas com importação de planilha CSV?</strong></p>
+                                                                <p><strong>R:</strong> Soluções comuns:</p>
+                                                                <ul>
+                                                                    <li>Use exatamente o modelo de planilha fornecido</li>
+                                                                    <li>Não altere os cabeçalhos das colunas</li>
+                                                                    <li>Certifique-se de que o arquivo está em formato CSV</li>
+                                                                    <li>Verifique se não há células mescladas</li>
+                                                                    <li>Remova caracteres especiais dos dados</li>
+                                                                </ul>
+                                                                <p><strong>Q: Link do Lattes inválido?</strong></p>
+                                                                <p><strong>R:</strong> O link deve começar com "http://" ou "https://" e ser um link válido da plataforma Lattes.</p>
+                                                            </div>
+                                                        </div></section>
+
+                                                        <!-- FAQ PROFESSOR RELATÓRIO -->
+                                                        <section id="faq-prof-relatorio" class="doc-section"><h2 class="section-title section-title-green"><a href="#" class="toggle-content" style="text-decoration:none;color:inherit;">FAQ: Erro no Professor Relatório <span style="font-size:0.8em;float:right;">&#9660;</span></a></h2><div class="section-block" style="display:none;">
+                                                            <div style="padding:20px; background:#f8f9fa; border-left:4px solid #28a745;">
+                                                                <h4 style="color:#28a745; margin-bottom:15px;">Problemas nos Relatórios de Professor</h4>
+                                                                <p><strong>Q: Não consigo visualizar os professores cadastrados?</strong></p>
+                                                                <p><strong>R:</strong> Possíveis soluções:</p>
+                                                                <ul>
+                                                                    <li>Verifique sua conexão com a internet</li>
+                                                                    <li>Atualize a página (F5)</li>
+                                                                    <li>Limpe o cache do seu navegador</li>
+                                                                    <li>Verifique se você tem permissão para visualizar relatórios</li>
+                                                                </ul>
+                                                                <p><strong>Q: Erro ao editar informações do professor?</strong></p>
+                                                                <p><strong>R:</strong> Certifique-se de que:</p>
+                                                                <ul>
+                                                                    <li>Você tem permissão para editar</li>
+                                                                    <li>Todos os campos obrigatórios estão preenchidos</li>
+                                                                    <li>O email não está sendo usado por outro professor</li>
+                                                                    <li>Os dados estão no formato correto</li>
+                                                                </ul>
+                                                                <p><strong>Q: Problema na exportação do relatório em PDF?</strong></p>
+                                                                <p><strong>R:</strong> Verifique se seu navegador permite downloads e se há professores cadastrados para gerar o relatório.</p>
+                                                            </div>
+                                                        </div></section>
+
+                                                        <!-- FAQ CURSO CADASTRO -->
+                                                        <section id="faq-curso-cadastro" class="doc-section"><h2 class="section-title section-title-green"><a href="#" class="toggle-content" style="text-decoration:none;color:inherit;">FAQ: Erro no Curso Cadastro <span style="font-size:0.8em;float:right;">&#9660;</span></a></h2><div class="section-block" style="display:none;">
+                                                            <div style="padding:20px; background:#f8f9fa; border-left:4px solid #28a745;">
+                                                                <h4 style="color:#28a745; margin-bottom:15px;">Problemas no Cadastro de Curso</h4>
+                                                                <p><strong>Q: Erro ao cadastrar novo curso?</strong></p>
+                                                                <p><strong>R:</strong> Verifique se:</p>
+                                                                <ul>
+                                                                    <li>O nome do curso não está duplicado</li>
+                                                                    <li>Todos os campos obrigatórios estão preenchidos</li>
+                                                                    <li>A carga horária é um número válido</li>
+                                                                    <li>A descrição não excede o limite de caracteres</li>
+                                                                </ul>
+                                                                <p><strong>Q: Problemas ao adicionar matérias ao curso?</strong></p>
+                                                                <p><strong>R:</strong> Soluções possíveis:</p>
+                                                                <ul>
+                                                                    <li>Certifique-se de que existe pelo menos um professor cadastrado</li>
+                                                                    <li>Verifique se o nome da matéria não está duplicado no curso</li>
+                                                                    <li>A carga horária da matéria deve ser um número positivo</li>
+                                                                    <li>Selecione um professor válido para a matéria</li>
+                                                                </ul>
+                                                                <p><strong>Q: Não consigo selecionar professor para a matéria?</strong></p>
+                                                                <p><strong>R:</strong> Primeiro cadastre professores no sistema. Sem professores cadastrados, não é possível associá-los às matérias.</p>
+                                                            </div>
+                                                        </div></section>
+
+                                                        <!-- FAQ CURSO RELATÓRIO -->
+                                                        <section id="faq-curso-relatorio" class="doc-section"><h2 class="section-title section-title-green"><a href="#" class="toggle-content" style="text-decoration:none;color:inherit;">FAQ: Erro no Curso Relatório <span style="font-size:0.8em;float:right;">&#9660;</span></a></h2><div class="section-block" style="display:none;">
+                                                            <div style="padding:20px; background:#f8f9fa; border-left:4px solid #28a745;">
+                                                                <h4 style="color:#28a745; margin-bottom:15px;">Problemas nos Relatórios de Curso</h4>
+                                                                <p><strong>Q: Lista de cursos não carrega?</strong></p>
+                                                                <p><strong>R:</strong> Tente:</p>
+                                                                <ul>
+                                                                    <li>Atualizar a página (F5)</li>
+                                                                    <li>Verificar sua conexão com a internet</li>
+                                                                    <li>Limpar o cache do navegador</li>
+                                                                    <li>Verificar se há cursos cadastrados no sistema</li>
+                                                                </ul>
+                                                                <p><strong>Q: Erro ao editar curso?</strong></p>
+                                                                <p><strong>R:</strong> Verifique se:</p>
+                                                                <ul>
+                                                                    <li>Você tem permissão para editar cursos</li>
+                                                                    <li>O novo nome do curso não está duplicado</li>
+                                                                    <li>Todos os campos obrigatórios estão preenchidos</li>
+                                                                    <li>As matérias associadas têm professores válidos</li>
+                                                                </ul>
+                                                                <p><strong>Q: Exportação de relatório falha?</strong></p>
+                                                                <p><strong>R:</strong> Certifique-se de que:</p>
+                                                                <ul>
+                                                                    <li>Há cursos cadastrados para exportar</li>
+                                                                    <li>Seu navegador permite downloads</li>
+                                                                    <li>Você tem espaço suficiente no dispositivo</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div></section>
+
+                                                        <!-- FAQ MONITORES -->
+                                                        <section id="faq-monitores" class="doc-section"><h2 class="section-title section-title-green"><a href="#" class="toggle-content" style="text-decoration:none;color:inherit;">FAQ: Erro nos Monitores <span style="font-size:0.8em;float:right;">&#9660;</span></a></h2><div class="section-block" style="display:none;">
+                                                            <div style="padding:20px; background:#f8f9fa; border-left:4px solid #28a745;">
+                                                                <h4 style="color:#28a745; margin-bottom:15px;">Problemas no Sistema de Monitores</h4>
+                                                                <p><strong>Q: Não consigo cadastrar minha voz?</strong></p>
+                                                                <p><strong>R:</strong> Soluções possíveis:</p>
+                                                                <ul>
+                                                                    <li>Verifique se seu microfone está funcionando e autorizado</li>
+                                                                    <li>Leia a frase completa de forma clara e audível</li>
+                                                                    <li>Certifique-se de estar em ambiente silencioso</li>
+                                                                    <li>Tente novamente se a primeira tentativa falhar</li>
+                                                                </ul>
+                                                                <p><strong>Q: Erro de localização ao registrar ponto?</strong></p>
+                                                                <p><strong>R:</strong> Verifique se:</p>
+                                                                <ul>
+                                                                    <li>O GPS do seu dispositivo está ativado</li>
+                                                                    <li>Você autorizou o aplicativo a acessar sua localização</li>
+                                                                    <li>Você está dentro do raio de 1km da instituição</li>
+                                                                    <li>Sua conexão com a internet está estável</li>
+                                                                </ul>
+                                                                <p><strong>Q: Reconhecimento de voz falha?</strong></p>
+                                                                <p><strong>R:</strong> Dicas para melhorar:</p>
+                                                                <ul>
+                                                                    <li>Fale de forma clara e pausada</li>
+                                                                    <li>Mantenha o dispositivo próximo à boca</li>
+                                                                    <li>Evite ruídos de fundo</li>
+                                                                    <li>Recalibre sua voz se necessário</li>
+                                                                </ul>
+                                                                <p><strong>Q: Não consigo visualizar relatório de monitores?</strong></p>
+                                                                <p><strong>R:</strong> Certifique-se de que há registros de ponto e que você tem permissão para visualizar relatórios.</p>
+                                                            </div>
+                                                        </div></section>
                                                     
                             
                             
@@ -625,6 +991,19 @@
                                         <li><a class="scrollto" href="#app-curso-cadastro">Curso Cadastro</a></li>
                                         <li><a class="scrollto" href="#app-curso-relatorio">Curso Relatório</a></li>
                                         <li><a class="scrollto" href="#app-monitores">Monitores</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span style="font-weight:bold;">FAQ</span>
+                                    <ul class="nav doc-sub-menu" style="display:block;">
+                                        <li><a class="scrollto" href="#faq-login">Erro de Login</a></li>
+                                        <li><a class="scrollto" href="#faq-cadastro">Erro no Cadastro</a></li>
+                                        <li><a class="scrollto" href="#faq-esqueceu">Erro no Esqueceu sua senha</a></li>                                       
+                                        <li><a class="scrollto" href="#faq-prof-cadastro">Erro no Professor Cadastro</a></li>
+                                        <li><a class="scrollto" href="#faq-prof-relatorio">Erro no Professor Relatório</a></li>
+                                        <li><a class="scrollto" href="#faq-curso-cadastro">Erro no Curso Cadastro</a></li>
+                                        <li><a class="scrollto" href="#faq-curso-relatorio">Erro no Curso Relatório</a></li>
+                                        <li><a class="scrollto" href="#faq-monitores">Erro nos Monitores</a></li>
                                     </ul>
                                 </li>
                             </ul>
